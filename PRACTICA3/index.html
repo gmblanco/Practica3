@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCREENEMA</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class = "logotipo">SCREENEMA</h2>
+            <ul class = "navegador">
+                <li><a href="#" top-rated>Top Rated</a></li>
+                <li><a href="#" popular>Popular</a></li>
+                <li><a href="#" now-playing>Now Playing</a></li>
+                <li><a href="#" upcoming>Upcoming</a></li>
+            </ul>
+            <div class = "search-wrapper">
+                <input type="search" id = "search" placeholder="Search..." data-search>
+            </div>
+        </nav>
+    </header>
+    <div class = "container" id = "container"></div>
+    
+    <footer class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+	</footer>
+
+    <template data-film-template>
+        <div class="card">
+            <img class = "poster" src = "" data-body>
+            <h3 class ="titulo" data-title></h3>
+        </div>
+    </template>
+
+    <script src="peliculas.js" defer></script>
+</body>
+</html>

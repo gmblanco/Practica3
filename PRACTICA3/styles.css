@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #141426;
+	color: #fdfdfd;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.container .card {
+	text-align: center;
+}
+
+.container .card .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.container .card .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	border: 3px solid #141426;
+	transition: border-color 0.3s ease;
+}
+
+.container .card .poster:hover {
+    cursor: pointer;
+    border-color:#f9db6d
+	
+}
+
+.paginacion { 
+	position: fixed;
+	bottom: 0;
+	background: #0e0e1b;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+
+header{
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar > h2{
+    color: #f9db6d;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #1b1b35;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: left;
+    padding: 14px 20px;
+    list-style: none;
+    gap: 20px;
+}
+
+.navegador a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegador a:hover{
+    color: #f9db6d;
+}
+
+.search-wrapper{
+    display: flex;
+    justify-content: left;
+    padding: 4px;
+    flex-direction: column;
+    gap: .25rem;
+	background: #f6f6f6;
+	border-radius: 20px;
+}
+
+input{
+    border-radius: 5px;
+    font-size: 15px;
+	background: transparent;
+	outline: none;
+	border: none;
+}
+
+@media screen and (max-width:700px){
+    .navbar,.navegador, .row{
+        flex-direction: column;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 40px;
+	width: 200px;
+	background: #1b1b35;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Lexend', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #e1c14d;
+}
+
+.hide{
+    display: none;
+}
